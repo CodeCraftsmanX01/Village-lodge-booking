@@ -1,0 +1,81 @@
+@import "./../../styles/abstracts//mixins";
+.amenities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .amenitiesOptions {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    height: 35rem;
+    flex-wrap: wrap;
+
+    // @include respond(500) {
+    //     & {
+    //         height: 21rem;
+    //     }
+    // }
+    // @include respond(650) {
+    //     & {
+    //         height: 17rem;
+    //     }
+    // }
+  }
+  .icons {
+    transition: all 0.2s;
+    width: 18%;
+    height: 18%;
+    p {
+      display: none;
+    }
+    &:hover {
+      transform: scale(1.2);
+      p {
+        display: block;
+      }
+    }
+  }
+
+  // .info {
+  //     font-size: 1.8em;
+  // }
+}
+
+// @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+//     .amenities {
+//         .header {
+//             .amenitiesOptions {
+//                 .icons {
+//                     margin: 2%;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media only screen and (min-width: 1024px) {
+//     .amenities {
+//         width: 50%;
+//         .header {
+//             .amenitiesOptions {
+//                 .icons {
+//                     margin: 1%;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media only screen and (min-width: 1280px) {
+//     .amenities {
+//         width: 50%;
+//         .header {
+//             .amenitiesOptions {
+//                 .icons {
+//                     margin: 3%;
+//                 }
+//             }
+//         }
+//     }
+// }

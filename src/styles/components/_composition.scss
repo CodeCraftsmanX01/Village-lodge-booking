@@ -1,0 +1,187 @@
+.composition {
+    position: relative;
+    &__photo {
+        width: 50%;
+        max-width: 290px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all 0.2s;
+        outline-offset: 2rem;
+
+        &--p1 {
+            left: 0rem;
+            top: 11rem;
+            @include respond(650) {
+                & {
+                    left: 0rem;
+                    top: 18rem;
+                }
+            }
+            @include respond(900) {
+                & {
+                    left: 7rem;
+                    top: 27rem;
+                }
+            }
+            @include respond(900) {
+                & {
+                    left: 7rem;
+                    top: 27rem;
+                }
+            }
+            @include respond(1200) {
+                & {
+                    left: 11rem;
+                    top: 19rem;
+                }
+            }
+        }
+
+        &--p2 {
+            display: none;
+            // @include respond(700) {
+            //     & {
+            //         display: block;
+            //         right: 2rem;
+            //         top: 3rem;
+            //     }
+            // }
+        }
+
+        &--p3 {
+            left: 8rem;
+            top: 4rem;
+            @include respond(400) {
+                & {
+                    left: 11rem;
+                }
+            }
+            @include respond(650) {
+                & {
+                    left: 5rem;
+                    top: 10rem;
+                }
+            }
+            @include respond(700) {
+                & {
+                    left: 6rem;
+                    top: 10rem;
+                }
+            }
+            @include respond(900) {
+                & {
+                    left: 1rem;
+                    top: 18rem;
+                }
+            }
+        }
+
+        &--p4 {
+            display: none;
+            @include respond(650) {
+                & {
+                    display: block;
+                    right: 17rem;
+                    top: 3rem;
+                }
+            }
+            @include respond(700) {
+                & {
+                    right: 14rem;
+                    top: 3rem;
+                }
+            }
+            @include respond(800) {
+                & {
+                    right: 17rem;
+                    top: 10rem;
+                }
+            }
+            @include respond(900) {
+                & {
+                    right: 4rem;
+                    top: 15rem;
+                }
+            }
+        }
+
+        &--p5 {
+            left: 7rem;
+            top: 18rem;
+            @include respond(400) {
+                & {
+                    left: 11rem;
+                }
+            }
+            @include respond(650) {
+                & {
+                    left: 26rem;
+                    top: 8rem;
+                }
+            }
+            @include respond(700) {
+                & {
+                    left: 25rem;
+                    top: 10rem;
+                }
+            }
+            @include respond(800) {
+                & {
+                    left: 30rem;
+                    top: 10rem;
+                }
+            }
+            @include respond(800) {
+                & {
+                    left: 30rem;
+                    top: 10rem;
+                }
+            }
+            @include respond(900) {
+                & {
+                    left: 13rem;
+                    top: 5rem;
+                }
+            }
+        }
+
+        &--p6 {
+            right: 0rem;
+            top: 11rem;
+            @include respond(650) {
+                & {
+                    right: 0rem;
+                    top: 18rem;
+                }
+            }
+            @include respond(700) {
+                & {
+                    right: 0rem;
+                    top: 18rem;
+                }
+            }
+            @include respond(900) {
+                & {
+                    left: 0rem;
+                    top: 8rem;
+                }
+            }
+        }
+
+        &--p7 {
+            display: none;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-0.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+            z-index: 20;
+        }
+    }
+    &:hover &__photo:not(:hover) {
+        transform: scale(0.95);
+    }
+}

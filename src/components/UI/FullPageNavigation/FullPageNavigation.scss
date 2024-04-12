@@ -1,0 +1,200 @@
+@import "./../../../styles/abstracts/variables";
+@import "./../../../styles/abstracts/mixins";
+
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: #fff;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 11%;
+    right: 4%;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(#000, 0.1);
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s;
+    @include respond(375) {
+      top: 13%;
+    }
+    @include respond(400) {
+      top: 14%;
+    }
+    @include respond(1024/1366) {
+      top: 9%;
+    }
+    @include respond(1600) {
+      top: 11%;
+      right: 4%;
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    // to remove a element from page use width:0 with opacity zero
+    opacity: 0;
+    width: 0;
+    background-color: #000;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__list {
+    position: absolute;
+    top: 23%;
+    right: -2%;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative;
+    background-color: transparent;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+    background-size: 242%;
+    transition: all 0.4s;
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+    }
+  }
+
+  //FUNCTIONALITY
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 57%;
+    @include respond(400) {
+      width: 47%;
+    }
+    @include respond(500) {
+      width: 41%;
+    }
+    @include respond(700) {
+      width: 30%;
+    }
+    @include respond(1024) {
+      width: 25%;
+    }
+    @include respond(1024/1366) {
+      width: 37%;
+    }
+    @include respond(1600) {
+      width: 19%;
+    }
+  }
+  &__checkbox:checked ~ &__button {
+    opacity: 1;
+    top: 14%;
+    right: 21%;
+    @include respond(375) {
+      right: 21%;
+    }
+    @include respond(400) {
+      right: 16%;
+    }
+    @include respond(500) {
+      right: 14%;
+    }
+    @include respond(650) {
+      right: 16%;
+    }
+    @include respond(700) {
+      right: 10%;
+    }
+    @include respond(1024) {
+      right: 8%;
+    }
+    @include respond(1024/1366) {
+      right: 13%;
+    }
+    @include respond(1200) {
+      right: 10%;
+    }
+    @include respond(1600) {
+      right: 6%;
+    }
+  }
+
+  //ICON
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -1.8rem;
+    }
+    &::after {
+      top: -0.9rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -2rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: -1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: -1rem;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: -1rem;
+    transform: rotate(-135deg);
+  }
+}

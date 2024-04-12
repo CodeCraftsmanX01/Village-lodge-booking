@@ -1,0 +1,56 @@
+.aboutUsComp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+  .Feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    .mailIcon {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .detailsContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .detail {
+        padding: 1rem;
+      }
+      .head {
+        font-size: 3rem;
+      }
+      .info {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 800px) {
+//     .aboutUsComp {
+//         width: 50%;
+//         padding: 2%;
+//         .Feedback {
+//             flex-direction: column;
+//         }
+//     }
+// }
+// @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+//     .aboutUsComp {
+//         width: 100%;
+//         padding: 5%;
+//         .Feedback {
+//             flex-direction: row;
+//         }
+//     }
+// }

@@ -1,0 +1,6 @@
+.sectionPadding {
+    padding: 1rem;
+    @include respond(900) {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+.locateUs {
+  .upper {
+    .upperBody {
+      .clickHereText {
+        color: $color-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+  .locateUsBody {
+    display: flex;
+    justify-content: space-evenly;
+    flex: wrap;
+    width: 100%;
+    flex-direction: column;
+    @include respond(1300) {
+      flex-direction: row;
+    }
+    .map {
+      flex: 1 0 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 1rem 0;
+      @include respond(650) {
+        margin: 0 1rem;
+      }
+      .leaflet-container {
+        height: 30vh;
+        width: 100%;
+        @include respond(650) {
+          height: 50vh;
+        }
+      }
+      .leaflet-div-icon {
+        background: transparent;
+        border: none;
+      }
+    }
+    .photoGallery {
+      flex: 1 0 50%;
+      padding: 1rem;
+    }
+  }
+}

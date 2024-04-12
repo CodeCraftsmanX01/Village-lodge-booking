@@ -1,0 +1,25 @@
+@import "../../../styles/abstracts/variables";
+
+.sideNavItem {
+  position: fixed;
+  right: -135px;
+  transition: 0.3s;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.1rem;
+  background-color: $color-primary;
+  z-index: 1000;
+
+  &:hover {
+    right: 0;
+  }
+  &_icon {
+    margin: 0.1rem 0.5rem;
+    padding-top: 0.5rem;
+  }
+}

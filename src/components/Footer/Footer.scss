@@ -1,0 +1,40 @@
+.Footer {
+    width: 100%;
+    .Footer1 {
+        background-color: #f4f4f4;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        h1 {
+            font-size: 3rem;
+        }
+        .Icons {
+            margin: 2rem;
+            color: #333;
+            cursor: pointer;
+        }
+        .socialLinks{
+            margin: 1.5rem;
+        }
+    }
+    .Footer2 {
+        background-color: #f8f4f4;
+        padding: 2%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .address {
+            width: 95%;
+            text-align: center;
+        }
+        .last {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1rem;
+            p{
+                margin: 0% 1%;
+            }
+        }
+    }
+}

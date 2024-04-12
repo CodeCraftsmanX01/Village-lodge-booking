@@ -1,0 +1,233 @@
+@import "./../abstracts/variables";
+body {
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #7f7f7f;
+}
+
+.mainHeadings {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  color: #7f7f7f !important;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  @include respond(375) {
+    & {
+      font-size: 3rem;
+    }
+  }
+}
+
+.secondaryHeading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: #7f7f7f;
+}
+
+.tertiaryHeading {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: #7f7f7f;
+}
+
+.comingSoonText {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  min-height: 36vh;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  @include respond(800) {
+    font-size: 6rem;
+  }
+  @include respond(1300) {
+    font-size: 10rem;
+  }
+}
+
+.listHeading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: #7f7f7f;
+}
+
+.fontSizeReducer {
+  font-size: 2rem !important;
+}
+.marginRemover {
+  margin: 0 !important;
+}
+.textCenter {
+  text-align: center !important;
+}
+
+.headingBolder {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.head {
+  font-size: 4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.info {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.info-small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: -0.5rem;
+}
+
+.customText {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabelDataResult {
+  font-size: 1.5rem;
+  font-weight: initial;
+}
+
+p,
+li {
+  font-size: inherit;
+  @include respond(700) {
+    font-size: 1.5rem;
+  }
+}
+
+.infoWordBreak {
+  word-break: break-all;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  font-size: 1.2rem;
+}
+
+th {
+  border: 1px solid #dddddd;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: $color-primary !important;
+  color: $color-white !important;
+}
+
+// td {
+//   color: #7f7f7f;
+//   font-weight: 600;
+// }
+
+@media print {
+  th {
+    color: $color-white !important;
+  }
+}
+
+td {
+  border: 1px solid #dddddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.smallText {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.MuiInputBase-root {
+  font-size: 1.5rem !important;
+}
+
+.MuiInputLabel-outlined {
+  transform: translate(14px, 27px) scale(1) !important;
+  @include respond(800) {
+    transform: translate(14px, 30px) scale(1) !important;
+  }
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -1px) scale(0.75) !important;
+}
+.MuiFormControl-root {
+  width: 100% !important;
+}
+
+.MuiFormLabel-root {
+  font-size: 1.5rem !important;
+  line-height: 0 !important;
+}
+.MuiFormControl-marginNormal {
+  margin: 0.5rem !important;
+}
+.MuiTypography-caption {
+  font-size: 1rem !important;
+}
+.MuiTypography-body2 {
+  font-size: 1rem !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 1rem !important;
+}
+.MuiSlider-markLabel {
+  font-size: 1.4rem !important;
+}
+
+.MuiTextField-root {
+  margin: 0.625rem !important;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: $color-primary !important;
+}
+
+.MuiIcon-root {
+  font-size: 15.5rem !important;
+}

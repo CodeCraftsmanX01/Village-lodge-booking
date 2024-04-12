@@ -1,0 +1,24 @@
+.dialog {
+    font-family: "Lato", arial, sans-serif;
+    padding: 0.5rem 2rem;
+    h3 {
+        display: inherit;
+        font-size: 2rem;
+        text-align: center !important;
+        text-transform: uppercase;
+    }
+    ul {
+        color: #555454;
+    }
+    .secondaryHeading{
+        color: #7f7f7f !important;
+    }
+}
+.formTableDescription {
+    width: 100%;
+    padding: 0.1875rem;
+    text-align: center;
+    td{
+        text-transform: uppercase;
+    }
+}

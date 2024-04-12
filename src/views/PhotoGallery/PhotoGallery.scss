@@ -1,0 +1,16 @@
+@import "./../../styles/abstracts/mixins";
+.photoGallery {
+  width: 100%;
+  .photoGalleryHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .iJsLMC {
+      width: 100%;
+    }
+  }
+}
+
+@include respond(650) {
+}

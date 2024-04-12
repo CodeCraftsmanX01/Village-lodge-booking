@@ -1,0 +1,129 @@
+@import "./../../styles/abstracts/variables";
+.activeItem {
+  border-bottom: 1px solid white !important;
+}
+.navigation__link__special {
+  border: 2px solid white !important;
+}
+.navigationitem {
+  position: relative;
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    // to remove a element from page use width:0 with opacity zero
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative;
+    background-color: transparent;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+    background-size: 242%;
+    transition: all 0.4s;
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+    }
+  }
+
+  .arrow {
+    fill: white;
+  }
+  &:hover .arrow {
+    fill: $color-primary;
+  }
+}
+
+.navigationitemSidebar {
+  list-style: none;
+  border: 2px solid white;
+  width: 100%;
+  margin: 2%;
+  .navigationNormalitem {
+    color: white;
+    font-weight: 600;
+  }
+  .navigationSpecialitem {
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 139px;
+    height: 46px;
+    text-align: center;
+  }
+  .buttonStyle {
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+  }
+  .buttonStyleSideBar {
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+  }
+  .buttonBorderedStyle {
+    color: white;
+    padding: 5px 12px;
+    font-size: 1.7em;
+    border: 2px solid white;
+  }
+  .buttonBorderedStyleSideBar {
+    color: white;
+    padding: 5px 12px;
+    font-size: 2.7em;
+    border: 2px solid white;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .navigationitem {
+    list-style: none;
+    .navigationNormalitem {
+      color: white;
+      font-weight: 600;
+    }
+    .navigationSpecialitem {
+      color: white;
+      border: 3px solid white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 139px;
+      height: 46px;
+      text-align: center;
+    }
+    .buttonStyle {
+      font-size: 1.2em;
+    }
+    .buttonStyleSideBar {
+      font-size: 1.2em;
+    }
+    .buttonBorderedStyle {
+      font-size: 1.2em;
+    }
+  }
+}

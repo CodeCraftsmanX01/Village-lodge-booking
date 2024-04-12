@@ -1,0 +1,33 @@
+@import "./../../styles/abstracts/variables";
+
+.mainbox {
+    background-color: $color-primary;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    .errorCode {
+        margin: 2rem;
+        .icon{
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+
+    .msg {
+        text-align: center;
+        font-size: 1.6rem;
+        width: 95%;
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

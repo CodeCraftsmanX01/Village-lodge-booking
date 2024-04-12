@@ -1,0 +1,78 @@
+.bill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .secondaryHeading {
+        color: #7f7f7f !important;
+    }
+    .registrationFormInner {
+        background: rgba(255, 255, 255, 0.925);
+        border: 5px solid black;
+        margin: 2%;
+        padding: 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .basicUserInfo {
+            border: 2px solid rgba(59, 59, 59, 0.164);
+            width: 90%;
+            padding: 0.1875rem;
+
+            .basicUserBookingInfo1 {
+                width: 100%;
+            }
+            .basicUserBookingInfo2 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .item {
+                    flex: 0 0 50%;
+                    text-align: left;
+                }
+            }
+        }
+        .formTable {
+            border: 2px solid rgba(3, 3, 3, 0.164);
+            width: 90%;
+            padding: 0.1875rem;
+            text-align: center;
+        }
+        .reserveButton {
+            margin: 5% 0%;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .idAndDate {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+        }
+        .mainHeadings {
+            font-size: 1rem;
+        }
+        .successText {
+            color: #2eaf2c !important;
+        }
+    }
+}
+@media print {
+    .smallText {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1152px) {
+    .bill {
+        .registrationFormInner {
+            width: 75%;
+        }
+    }
+}

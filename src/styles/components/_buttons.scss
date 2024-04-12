@@ -1,0 +1,53 @@
+@import './../abstracts/variables';
+.btn {
+    text-decoration: none;
+    padding: 11px 12px;
+    font-size: 2rem;
+    margin-top: 2%;
+    transition: all 0.2s;
+    position: relative;
+    text-transform: uppercase;
+    color: white !important;
+    outline: none !important;
+  }
+  .btn-enabled {
+    position: relative;
+  }
+  .btn-enabled:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .btn-enabled:active {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-enabled::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+  .btn-enabled:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  
+  .btn-brown {
+    background-color: $color-primary;
+  }
+  .btn-brown::after {
+    background-color: $color-primary;
+  }
+  .btn-long {
+    width: 100%;
+  }
+  .btn-brown-disabled {
+    background-color: #67635e;
+  }

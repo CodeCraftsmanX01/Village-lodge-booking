@@ -1,0 +1,8 @@
+.horizontalLine {
+    background-image: radial-gradient($color-grey-dark, $color-white);
+    height: 1px;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 5rem;
+}

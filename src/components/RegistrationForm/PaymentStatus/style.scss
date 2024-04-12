@@ -1,0 +1,21 @@
+.paymentStatus {
+    min-height: 90vh;
+    .paymentStatus-icon {
+        margin-top: -5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        // .MuiIcon-root {
+        //     font-size: 15.5rem;
+        // }
+        .secondaryHeading {
+            color: white;
+            font-size: 2rem;
+        }
+    }
+    .invoiceDiv{
+        margin-top: -5rem;
+    }
+}

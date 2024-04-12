@@ -1,0 +1,234 @@
+.fadeInUp {
+  animation: fadeInUp 1s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeOutUp {
+  animation: fadeOutUp 1s;
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  animation: fadeOutLeft 1s;
+}
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  animation: fadeOutRight 1s;
+}
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.anim-toRight {
+  animation: anim-toRight 1s linear;
+  // &:hover {
+  //   animation-play-state: paused;
+  // }
+}
+@keyframes anim-toRight {
+  0% {
+    -webkit-transform: translateX(-30em);
+  }
+
+  90% {
+    -webkit-transform: translateX(1em);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+.tooltipAnimation {
+  animation: colorchange 3s infinite alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    fill: black;
+  }
+  50% {
+    fill: red;
+  }
+}
+
+.iconSmallBigTooSmall {
+  animation: smallBigTooSmall 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes smallBigTooSmall {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+  }
+  50% {
+    transform: translateY(30vh) scale(1.5);
+  }
+  100% {
+    transform: translateY(0) scale(0.5);
+  }
+}
+
+.iconSmallBigSmall {
+  animation: smallBigSmall 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes smallBigSmall {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+  }
+  50% {
+    transform: translateY(30vh) scale(1.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.itemVisible {
+  animation: comeToVisibility 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes comeToVisibility {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.backgroundImageAnimation {
+  animation: fadeInImage 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pageLoad {
+  animation: fadeInImage 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    background-color: black;
+  }
+  100% {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+.dropdownAnimationOpen {
+  animation: dropdownAnimationOpen 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdownAnimationOpen {
+  0% {
+    max-height: 0rem;
+    opacity: 0;
+  }
+  100% {
+    max-height: 30rem;
+    opacity: 1;
+  }
+}
+
+.dropdownAnimationClose {
+  animation: dropdownAnimationClose 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdownAnimationClose {
+  0% {
+    max-height: 30rem;
+  }
+  100% {
+    max-height: 0rem;
+    opacity: 0;
+  }
+}

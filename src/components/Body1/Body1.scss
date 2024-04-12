@@ -1,0 +1,97 @@
+@import "./../../styles/abstracts//mixins";
+.body1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 34vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    .left {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .leftContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .right {
+      width: 100%;
+      height: 36rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .imageSlideshow {
+        width: 100%;
+        height: auto;
+      }
+      @include respond(400) {
+        & {
+          height: 41rem;
+        }
+      }
+    }
+  }
+
+  @include respond(900) {
+    .details {
+      width: 95%;
+      flex-direction: row;
+      .left {
+        width: 40%;
+        margin-right: 3%;
+      }
+      .right {
+        width: 60%;
+      }
+    }
+  }
+
+  @include respond(1400) {
+    .details {
+      width: 95%;
+      flex-direction: row;
+      .left {
+        width: 50%;
+        margin-right: 3%;
+      }
+      .right {
+        width: 50%;
+      }
+    }
+  }
+  @include respond(1920) {
+    .details {
+      width: 95%;
+      flex-direction: row;
+      .left {
+        width: 53%;
+        margin-right: 3%;
+      }
+      .right {
+        width: 47%;
+      }
+    }
+  }
+}

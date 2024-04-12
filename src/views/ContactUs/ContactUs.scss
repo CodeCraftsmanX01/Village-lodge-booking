@@ -1,0 +1,56 @@
+@import "./../../styles/abstracts/mixins";
+.contactUsMain {
+  width: 100%;
+  .aboutUsBody {
+    width: 97%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+  }
+}
+
+@include respond(650) {
+  .contactUsMain {
+    .aboutUsBody {
+      flex-direction: row;
+    }
+  }
+}
+
+// @media only screen and (min-width: 800px) {
+//     .aboutUs {
+//         .aboutUsHome {
+//             .aboutUsBody {
+//                 flex-direction: row;
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+//     .aboutUs {
+//         width: 100%;
+//         .aboutUsHome {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             .aboutInfo {
+//                 font-size: 2em;
+//                 width: 95%;
+//             }
+//             .aboutUsBody {
+//                 width: 97%;
+//                 height: 100%;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 flex-direction: column;
+//                 background-color: white;
+//             }
+//         }
+//     }
+// }

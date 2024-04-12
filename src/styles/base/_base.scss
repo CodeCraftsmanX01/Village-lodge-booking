@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 9px;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  @include respond(375) {
+    font-size: 10px;
+  }
+  @include respond(400) {
+    font-size: 11px;
+  }
+  @include respond(500) {
+    font-size: 12px;
+  }
+  @include respond(700) {
+    font-size: 12px;
+  }
+  @include respond(800) {
+    font-size: 14px;
+  }
+  @include respond(900) {
+    font-size: 15px;
+  }
+  @include respond(1024) {
+    font-size: 16px;
+  }
+  @include respond(1024/1366) {
+    font-size: 21px;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.customIcon {
+  height: 3.5rem;
+  width: 4rem;
+  @include respond(500) {
+    height: 4rem;
+    width: 4rem;
+  }
+  @include respond(700) {
+    height: 5rem;
+    width: 6rem;
+  }
+  @include respond(900) {
+    height: 6rem;
+    width: 5rem;
+  }
+  @include respond(1024) {
+    height: 6rem;
+    width: 6rem;
+  }
+  @include respond(1024/1366) {
+    height: 4rem;
+    width: 4rem;
+  }
+  // @include respond(1600) {
+  //   height: 4rem;
+  //   width: 4rem;
+  // }
+  // @include respond(1920) {
+  //   height: 4rem;
+  //   width: 4rem;
+  // }
+}
+
+.sidebarIcons {
+  height: 3rem;
+  width: 3rem;
+  fill: white;
+}

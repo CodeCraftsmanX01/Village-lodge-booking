@@ -1,0 +1,59 @@
+.checkAvailbility {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+  padding: 3%;
+  .component {
+    padding: 2%;
+    .datePicker {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: 1.25rem 0;
+      // .MuiFormLabel-root {
+      //     font-size: 2em;
+      //     line-height: 0;
+      // }
+      // .MuiInputBase-root {
+      //     font-size: 1.4em;
+      // }
+      // .MuiFormControl-marginNormal {
+      //     margin: 0.5rem;
+      // }
+      // .MuiSvgIcon-root {
+      //     font-size: 2rem;
+      // }
+      // .MuiTypography-body1 {
+      //     font-size: 1rem;
+      // }
+      // .MuiTypography-caption {
+      //     font-size: 1rem;
+      // }
+      // .MuiTypography-body2 {
+      //     font-size: 1.5rem;
+      // }
+    }
+    .roomGuestSelector {
+      width: 95%;
+      margin-bottom: 0 1.25rem;
+      // .MuiTypography-body1 {
+      //     font-size: 1.5rem;
+      // }
+      // .MuiSlider-markLabel {
+      //     font-size: 0.9rem;
+      // }
+    }
+    .costBreakdownText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .reserveButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}

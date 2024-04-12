@@ -1,0 +1,23 @@
+@import "styles/abstracts/variables";
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/utilities";
+
+@import "styles/base/base";
+
+@import "styles/components/scrollbar";
+@import "styles/components/composition";
+@import "styles/components/singleImageComposition";
+
+@import "styles/base/typography";
+
+@import "styles/base/animations";
+
+@import "styles/components/horizontalLine";
+@import "styles/components/backgroundImage";
+@import "styles/components/buttons";
+
+.hidden {
+  opacity: 0;
+}
+
+/*======================================  Media queries ================================================*/

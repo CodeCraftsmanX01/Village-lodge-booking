@@ -1,0 +1,136 @@
+@import "./../../styles/abstracts/mixins";
+.aboutUs {
+  width: 100%;
+  .aboutUsHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .aboutInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 2%;
+      .left {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .leftContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .imageSlideshow {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    @include respond(900) {
+      .aboutInfo {
+        width: 95%;
+        flex-direction: row;
+        .left {
+          width: 40%;
+          margin-right: 3%;
+        }
+        .right {
+          width: 60%;
+        }
+      }
+    }
+
+    @include respond(1400) {
+      .aboutInfo {
+        width: 95%;
+        flex-direction: row;
+        .left {
+          width: 50%;
+          margin-right: 3%;
+        }
+        .right {
+          width: 50%;
+        }
+      }
+    }
+    @include respond(1920) {
+      .aboutInfo {
+        width: 95%;
+        flex-direction: row;
+        .left {
+          width: 53%;
+          margin-right: 3%;
+        }
+        .right {
+          width: 47%;
+        }
+      }
+    }
+    .aboutUsBody {
+      width: 97%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: white;
+    }
+  }
+}
+
+@include respond(650) {
+  .aboutUs {
+    .aboutUsHome {
+      .aboutUsBody {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 800px) {
+//     .aboutUs {
+//         .aboutUsHome {
+//             .aboutUsBody {
+//                 flex-direction: row;
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+//     .aboutUs {
+//         width: 100%;
+//         .aboutUsHome {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             .aboutInfo {
+//                 font-size: 2em;
+//                 width: 95%;
+//             }
+//             .aboutUsBody {
+//                 width: 97%;
+//                 height: 100%;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 flex-direction: column;
+//                 background-color: white;
+//             }
+//         }
+//     }
+// }

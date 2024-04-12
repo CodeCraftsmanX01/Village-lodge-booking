@@ -1,0 +1,11 @@
+.cancellationPolicy {
+  .cancellationPolicyBody {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    .cancellationPolicyBodyInner {
+      width: 80%;
+    }
+  }
+}

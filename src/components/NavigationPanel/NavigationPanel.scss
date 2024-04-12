@@ -1,0 +1,30 @@
+@import './../../styles/abstracts/mixins';
+.navigationPanel {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    min-height: 10vh;
+    .navigationLogo {
+        flex: 1 0 44%;
+        color: white;
+        text-align: center;
+        display: unset;
+        padding-top: 3.5%;
+        @include respond(1300){
+            padding-top: 0.5%;
+        }
+        .logo {
+            width: 83%;
+            height: auto;
+            max-width: 372px;
+        }
+    }
+    .navigationItems {
+        flex: 1 0 63%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 6rem;
+    }
+}

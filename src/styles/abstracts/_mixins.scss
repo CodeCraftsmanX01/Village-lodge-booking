@@ -1,0 +1,79 @@
+// 1em = 16px for media queries, it dont depend on root font size for media queries.
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 375 {
+    @media only screen and (min-width: 375px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 400 {
+    @media only screen and (min-width: 400px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 500 {
+    @media only screen and (min-width: 500px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 600 {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 650 {
+    @media only screen and (min-width: 650px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 700 {
+    @media only screen and (min-width: 700px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 800 {
+    @media only screen and (min-width: 800px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 900 {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1024/1366 {
+    @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1024 {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1200 {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1300 {
+    @media only screen and (min-width: 1300px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1400 {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1600 {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1920 {
+    @media only screen and (min-width: 1920px) {
+      @content;
+    }
+  }
+}
